@@ -77,9 +77,9 @@ RUN apt-get update \
 
 
 COPY . /app
-RUN chmod +x /app/conf.d/Mars-websockify.sh
-RUN chmod +x /app/Mars-run.sh
-RUN chmod +x /app/Mars-expect_vnc.sh
+RUN chmod +x /app/conf.d/ed-websockify.sh
+RUN chmod +x /app/ed-run.sh
+RUN chmod +x /app/ed-expect_vnc.sh
 
 RUN echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' >> /etc/apt/sources.list
 RUN echo "deb http://deb.anydesk.com/ all main"  >> /etc/apt/sources.list
