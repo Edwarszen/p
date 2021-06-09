@@ -107,10 +107,7 @@ ENV UNAME pacat
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install --yes pulseaudio-utils
 
-# Set up the user
 
-RUN chown root:root /usr/bin/sudo
-RUN chmod 4755 /usr/bin/sudo
 
 
 # Set up the user
