@@ -16,7 +16,7 @@ RUN set -ex; \
 	
 	
 	
-		 
+	file-roller \	 
 	
         dbus-x11 \
         nautilus \
@@ -68,10 +68,6 @@ RUN sudo apt-get update && sudo apt-get install -y obs-studio
 
 
 
-# Additional
-RUN sudo apt-get update && sudo apt upgrade -y 
-RUN apt-get update \
- && DEBIAN_FRONTEND=noninteractive apt-get install --yes ubuntu-drivers-common
 
 
 
@@ -93,7 +89,7 @@ RUN set -ex; \
         google-chrome-stable \
 	anydesk
 
-RUN sudo apt-get --allow-releaseinfo-change update
+
 
 
 
